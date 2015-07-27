@@ -1,0 +1,6 @@
+<h1>Tweets!</h1>
+  <% @tweets.each do |tweet| %>  
+<p><strong><%= tweet.user.name %></strong>: <%= tweet.status %></p>
+<% end %>
+    
+

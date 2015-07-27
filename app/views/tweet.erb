@@ -1,0 +1,13 @@
+<h1>Add a tweet</h1>
+  <form action="/tweet" method="POST">
+    <p>User: 
+      <select name="user_id">
+        <% @users.each do |user| %>
+        <option value="<%= user.id %>"><%= user.name %></option>
+        <% end %>
+      </select>
+    </p>
+    <p>Status: <input type="text" name="status"></p>
+    <input class="btn btn-primary" type="submit">
+  </form>
+      
